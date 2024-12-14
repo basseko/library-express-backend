@@ -5,7 +5,7 @@ import * as borrowService from "../services/borrowService";
 export const borrowBook = async (req: Request, res: Response) => {
   try {
     const userId = req.user?.id;
-    const bookId = req.params.bookId;
+    const bookId = req.params.id;
 
     if (!userId) {
       res.status(400).json({ message: "User must be authenticated" });
@@ -31,7 +31,7 @@ export const borrowBook = async (req: Request, res: Response) => {
 export const returnBook = async (req: Request, res: Response) => {
   try {
     const userId = req.user?.id;
-    const bookId = req.params.bookId;
+    const bookId = req.params.id;
 
     if (!userId) {
       res.status(400).json({ message: "User must be authenticated" });

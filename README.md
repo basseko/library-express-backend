@@ -116,8 +116,8 @@ This documentation will help you interact with the API endpoints directly.
 - `POST /books/add`: Add a new book to the library
 - `GET /books/search`: Search for books by title or author
 - `GET /books/borrowed`: List all borrowed books
-- `POST /books/borrow/{bookId}`: Borrow a book (requires authentication)
-- `POST /books/return/{bookId}`: Return a borrowed book (requires authentication)
+- `POST /books/borrow/{id}`: Borrow a book (requires authentication)
+- `POST /books/return/{id}`: Return a borrowed book (requires authentication)
 - `GET /books/{id}`: Get details of a specific book by ID
 
 ## Project Structure

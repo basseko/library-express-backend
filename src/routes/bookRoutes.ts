@@ -96,13 +96,13 @@ router.get("/borrowed", listBorrowedBooks);
 
 /**
  * @swagger
- * /books/borrow/{bookId}:
+ * /books/borrow/{id}:
  *   post:
  *     summary: Borrow a book from the library
  *     tags: [Books]
  *     parameters:
  *       - in: path
- *         name: bookId
+ *         name: id
  *         required: true
  *         description: ID of the book to borrow
  *         schema:
@@ -118,7 +118,7 @@ router.get("/borrowed", listBorrowedBooks);
  *         description: Internal server error
  */
 router.post(
-  "/borrow/:bookId",
+  "/borrow/:id",
   authenticate,
   validateRequest(bookIdParamSchema, "params"),
   borrowBook
@@ -126,13 +126,13 @@ router.post(
 
 /**
  * @swagger
- * /books/return/{bookId}:
+ * /books/return/{id}:
  *   post:
  *     summary: Return a borrowed book
  *     tags: [Books]
  *     parameters:
  *       - in: path
- *         name: bookId
+ *         name: id
  *         required: true
  *         description: ID of the book to return
  *         schema:
@@ -148,7 +148,7 @@ router.post(
  *         description: Internal server error
  */
 router.post(
-  "/return/:bookId",
+  "/return/:id",
   authenticate,
   validateRequest(bookIdParamSchema, "params"),
   returnBook

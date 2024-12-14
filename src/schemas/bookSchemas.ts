@@ -16,5 +16,5 @@ export const searchBooksSchema = z.object({
 });
 
 export const bookIdParamSchema = z.object({
-  bookId: z.string().uuid("Invalid book ID format"),
+  id: z.string().uuid("Invalid book ID format"),
 });
