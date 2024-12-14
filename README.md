@@ -138,3 +138,7 @@ src/
 ├── server.ts            # Server start-up
 ├── swagger.ts           # Swagger configuration for API documentation
 ```
+
+## Schema
+
+The schema is available as an Prisma schema file in `prisma/schema.prisma`.
