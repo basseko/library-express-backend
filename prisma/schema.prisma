@@ -19,7 +19,6 @@ model Book {
   author        String
   genre         String
   publishedYear Int
-  borrows       Borrow[]
 }
 
 model User {
