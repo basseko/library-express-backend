@@ -141,4 +141,4 @@ src/
 
 ## Schema
 
-The schema is available as an Prisma schema file in `prisma/schema.prisma`.
+The schema is available as a Prisma schema file in `prisma/schema.prisma`.
